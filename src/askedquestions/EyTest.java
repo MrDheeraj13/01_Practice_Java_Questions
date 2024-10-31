@@ -38,9 +38,10 @@ public class EyTest {
         employees.add(new Employee("Bob", 55000));
         employees.add(new Employee("Alice", 45000));
 
-        employees.stream()
+        List<Employee> list = employees.stream()
         .sorted(Comparator.comparing(Employee::getName)
         		.thenComparing(Employee::getSalary).reversed()).collect(Collectors.toList());
+        System.out.println(list);
        
     }
 }

@@ -21,7 +21,7 @@ public class CommonQuestionAskedInJava8 {
 		List<String> listOfStrings = Arrays.asList("One", "Two", "Three", "Four", "Five", "Six");
 		
 		String lst = listOfStrings.stream().skip(listOfStrings.size()-1).findFirst().get();
-//		System.out.println(lst);
+		System.out.println(lst);
 		
 //		2.find 10 odd number
 //		Stream.iterate(new int[] {1,3}, f -> new int[] {f[1],f[1]+2})
@@ -103,10 +103,16 @@ public class CommonQuestionAskedInJava8 {
 		
 //      12. Second largest number in list
         
-        List<Integer> listOfIntegers = Arrays.asList(45, 12, 56, 15, 24, 75, 31, 89);
-        int secondLargest = listOfIntegers.stream().sorted(Comparator.reverseOrder())
+        List<Integer> listOfInteger = Arrays.asList(45, 12, 56, 15, 24, 75, 31, 89);
+        int secondLargest = listOfInteger.stream().sorted(Comparator.reverseOrder())
         		.skip(1).findFirst().get();
 		System.out.println(secondLargest);
+
+//		merger two array
+		int[] a = new int[] { 4, 2, 3, 5, 7, 1 };
+		int[] b = new int[] { 8, 3, 9, 1, 3, 5 };
+		int[] c = IntStream.concat(Arrays.stream(a),Arrays.stream(b)).distinct().sorted().toArray();
+		System.out.println(Arrays.toString(c));
 		
 	}
 

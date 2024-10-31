@@ -1,6 +1,6 @@
 package askedquestions;
 
-public class TestEy {
+public class TestCapg {
 
 	public static void main(String[] args) {
 

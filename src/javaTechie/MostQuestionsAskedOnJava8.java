@@ -28,9 +28,10 @@ public class MostQuestionsAskedOnJava8 {
 		List<String> duplicatelist = Arrays.stream(str.split(""))
 				.filter(ch ->!set.add(ch)).collect(Collectors.toList());
 //		System.out.println(duplicatelist);
-		List<String> duplicateChar = map.entrySet().stream().filter(x ->x.getValue() > 1)
-		.map(Map.Entry::getKey).collect(Collectors.toList());
+//		List<String> duplicateChar = map.entrySet().stream().filter(x ->x.getValue() > 1)
+//		.map(Map.Entry::getKey).collect(Collectors.toList());
 //		System.out.println(duplicateChar);
+		
 		
 //		3.find unique character
 		List<String> uniquesChar = map.entrySet().stream().filter(ch -> ch.getValue() == 1)
