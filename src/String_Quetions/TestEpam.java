@@ -16,6 +16,8 @@ public class TestEpam{
 		Addable ad2 = (a,b)->(a+b);
 		System.out.println(ad2.add(11, 12));
 		
+		Addable ad3 = (a,b)->(a+b);
+		System.out.println(ad3.add(20, 10));
 		
 		
 		

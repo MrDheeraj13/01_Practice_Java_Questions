@@ -101,6 +101,7 @@ public class CommonQuestionAskedInJava8 {
 			System.out.println("Not an anagram");
 		}
 		
+		
 //      12. Second largest number in list
         
         List<Integer> listOfInteger = Arrays.asList(45, 12, 56, 15, 24, 75, 31, 89);
@@ -113,6 +114,7 @@ public class CommonQuestionAskedInJava8 {
 		int[] b = new int[] { 8, 3, 9, 1, 3, 5 };
 		int[] c = IntStream.concat(Arrays.stream(a),Arrays.stream(b)).distinct().sorted().toArray();
 		System.out.println(Arrays.toString(c));
+		
 		
 	}
 
